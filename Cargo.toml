@@ -1,0 +1,5 @@
+# Only for `cargo test` of the engine crate here: the game builds the crate on
+# Horizon's own workspace and lock file.
+[workspace]
+members = ["mixins/schematics/engine", "tools/inspect"]
+resolver = "3"

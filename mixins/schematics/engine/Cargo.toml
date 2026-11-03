@@ -1,0 +1,11 @@
+[package]
+name = "schematics-engine"
+version = "1.0.0"
+edition = "2024"
+license = "MIT"
+description = "Schematics for Horizon: schematic formats, placements, transforms and menus, free of Horizon's types"
+publish = false
+
+# Only crates in Horizon's Cargo.lock, by version requirement.
+[dependencies]
+flate2 = { version = "1.1.10", default-features = false, features = ["zlib-rs", "runtime_detection"] }

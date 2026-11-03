@@ -1,0 +1,10 @@
+[package]
+name = "schematics-inspect"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+# A development tool: reads schematic files with the engine and prints what
+# it found (`cargo run -p schematics-inspect -- <files>`).
+[dependencies]
+schematics-engine = { path = "../../mixins/schematics/engine" }
